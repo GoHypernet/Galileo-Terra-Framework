@@ -58,7 +58,7 @@ COPY --from=galileo-ide --chown=galileo /caddy/users.json /etc/gatekeeper/users.
 COPY --from=galileo-ide --chown=galileo /caddy/auth.txt /etc/gatekeeper/auth.txt
 COPY --from=galileo-ide --chown=galileo /caddy/settings.template /etc/gatekeeper/assets/settings.template
 COPY --from=galileo-ide --chown=galileo /caddy/login.template /etc/gatekeeper/assets/login.template
-COPY --from=galileo-ide --chown=galileo /caddy/custom.css /etc/gatekeeper/assets/custom.css
+COPY --from=galileo-ide --chown=galileo /caddy/custom.css /etc/assets/custom.css
 
 COPY --from=galileo-ide --chown=galileo /home/galileo/.terrad/config/genesis.json /home/galileo/.terrad/config/genesis.json
 COPY --from=galileo-ide --chown=galileo /home/galileo/.terrad/config/addrbook.json /home/galileo/.terrad/config/addrbook.json
